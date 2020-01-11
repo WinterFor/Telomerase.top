@@ -1,0 +1,6 @@
+## awk_one_blast_to_bed
+{if ( $1 !~ /+/ )
+    printf("%s\t%s\t%s\t%s\t%s\t%s\n", $2, $10-1, $9, $1, ".", "-")
+ else
+    printf("%s\t%s\t%s\t%s\t%s\t%s\n", $2, $9-1, $10, $1, ".", "+")
+}
